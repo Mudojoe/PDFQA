@@ -31,7 +31,7 @@ print("hi")
 # Load saved model
 vectordb = None
 persist_dir = "MyTextEmbedding"
-embedding = OpenAIEmbeddings(model="text-embedding-3-large")
+embedding = OpenAIEmbeddings(model="gpt-3.5-turbo-instruct")
 vectordb = Chroma(persist_directory=persist_dir, embedding_function=embedding)
 chain = RetrievalQA.from_chain_type(OpenAI(), retriever=vectordb.as_retriever(), chain_type="stuff")
 
