@@ -1,6 +1,8 @@
-langchain==0.0.184
-PyPDF2==3.0.1
-streamlit==1.18.1
-openai==0.27.6
-python-dotenv==1.0.1
-chromadb==0.3.29
+langchain
+langchain-openai
+PyPDF2
+streamlit
+openai
+chromadb
+altair==4.0
+pypdf
