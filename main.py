@@ -39,8 +39,8 @@ chain = RetrievalQA.from_chain_type(OpenAI(), retriever=vectordb.as_retriever(),
 
 def get_results(abs_text):
     list1 = chain.run(abs_text)
-    list1['result'] = list1['result'].replace('\n', '')
-    list1['result']
+    
+    list1
 
 print("\n\nAI formatted abstract is given below:\n")
 
