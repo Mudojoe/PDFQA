@@ -36,7 +36,7 @@ vectordb = Chroma(persist_directory=persist_dir, embedding_function=embedding)
 chain = RetrievalQA.from_chain_type(OpenAI(), retriever=vectordb.as_retriever(), chain_type="stuff")
 
 def get_results(abs_text):
-    list1 = chain.invoke(abs_text)
+    list1 = chain.run(abs_text)
     list1['result'] = list1['result'].replace('\n', '')
     list1['result']
 
