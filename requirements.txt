@@ -3,6 +3,6 @@ langchain-openai
 PyPDF2
 streamlit
 openai
-chromadb
+chromadb==0.3.29
 altair==4.0
 pypdf
