@@ -20,7 +20,7 @@ chain = RetrievalQA.from_chain_type(OpenAI(), retriever=vectordb.as_retriever(),
 
 def get_results(abs_text):
     list1 = chain.run(abs_text)
-    return list1
+    list1
 
 if st.button('Ask'):
     get_results(txt)
