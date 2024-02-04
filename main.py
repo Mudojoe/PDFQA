@@ -8,7 +8,7 @@ import os
 # Set the OpenAI API key
 os.environ["OPENAI_API_KEY"] = st.secrets['api_key']
 
-st.title('Skimlit')
+st.title('Pdf_Question_Answering')
 txt = st.text_area('Text to analyze', '''Ask the Question''')
 
 # Load saved model
